@@ -216,3 +216,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+notes
+
+# Audio files
+*.m4a
+*.wav
+*.mp3
+*.ogg
+*.flac
+
+# Model cache
+models/
+*.ct2
+*.bin
+*.onnx
+
+# Results
+results/*.csv
+results/*.json
