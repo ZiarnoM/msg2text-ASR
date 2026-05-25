@@ -226,7 +226,7 @@ notes
 *.flac
 
 # Model cache
-models/
+/models/
 *.ct2
 *.bin
 *.onnx
