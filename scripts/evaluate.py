@@ -6,6 +6,8 @@ import sys
 # Allow running from project root
 sys.path.insert(0, ".")
 
+import src.models  # noqa: F401 — registers models
+
 from src.data.custom_dataset import CustomVoiceDataset
 from src.evaluation.runner import evaluate_all_models
 

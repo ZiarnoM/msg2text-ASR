@@ -1,0 +1,80 @@
+{
+  "summary": {
+    "model": "whisper-medium",
+    "samples": 6,
+    "avg_wer_raw": 0.3487,
+    "avg_cer_raw": 0.1218,
+    "avg_wer_normalized": 0.1431,
+    "avg_cer_normalized": 0.0883,
+    "avg_inference_time_s": 13.07,
+    "avg_confidence": 0.9678
+  },
+  "samples": [
+    {
+      "index": 0,
+      "reference": "Ja będę po dwunastej, jak coś, więc nie wiem, co byś chciała na obiad?",
+      "hypothesis": "Ja będę po 12 jak coś, więc nie wiem co chcesz na obiad.",
+      "inference_time_s": 7.11,
+      "confidence": 0.8492,
+      "wer_raw": 0.3571,
+      "cer_raw": 0.2857,
+      "wer_normalized": 0.2143,
+      "cer_normalized": 0.2727
+    },
+    {
+      "index": 1,
+      "reference": "A jutro w planach albo siłka, albo bieganie, potem obiadek, ale bym sobie kebabika zjadł, taką ochotę mam, no.",
+      "hypothesis": "A, jutro w planetę albo siłka, albo bieganie, potem obiadek, albo sobie katapika zjadę, taką ochotę mam z nią.",
+      "inference_time_s": 7.86,
+      "confidence": 0.9908,
+      "wer_raw": 0.4737,
+      "cer_raw": 0.1455,
+      "wer_normalized": 0.3684,
+      "cer_normalized": 0.1442
+    },
+    {
+      "index": 2,
+      "reference": "Przypomniało mi się, o co mnie Piotrek pytał, tak jakże właśnie dlaczego gdzieś tam się hamuje przed yyy atakowaniem. I w ogóle. To tak samo mnie pytał, że co jest takiego, że mam blokadę przed serwami Brajana? I ja mówię: no, no nie wiem no, po prostu emm też mówi co boli, no mówię, to boli. I nawet jak mam rękawki nie yyy po prostu no, chociaż mówię, serwy nie są aż tak straszne, mimo wszystko jak ataki bo jeszcze grając środkiem tak jak my gramy to masakra bo ja już raz no na tej siatce co byłam kiedyś z Pati, dostałam z całej pydy w twarz i no wiadomo, że takie rzeczy się zdarzają jak w każdym sporcie ogólnie, jakieś takie no akcje, ale no wiadomo że nie wiem no mi się nie wiem wolałabym nie",
+      "hypothesis": "Przypomniało mi się, o co mnie Piotrek pytał. Tak jak, że właśnie dlaczego gdzieś tam się hamuje przed atakowaniem i w ogóle. To tak samo mnie pytał, że co jest takiego, że mam blokadę przed serwami Brajana. I ja mówię, no nie wiem, no po prostu, też mówi co, boli? No mówię, no boli. I nawet jak mam rynkawki, nie? Po prostu, no, chociaż mówię, serwy nie są aż tak straszne mimo wszystko, jak ataki. Bo jeszcze grając środkiem, tak jak my gramy, to masakra. Bo ja już raz na tej siatce, co byłam kiedyś z Pati, dostałam z całej pyty w twarz. I, no wiadomo, że takie rzeczy się zdarzają jak w każdym sporcie ogólnie. Jakieś takie, no, akcje. Ale, no, wiadomo, że, nie wiem, no mi się, nie wiem, wolałaby mnie.",
+      "inference_time_s": 30.4,
+      "confidence": 0.9956,
+      "wer_raw": 0.365,
+      "cer_raw": 0.0938,
+      "wer_normalized": 0.0876,
+      "cer_normalized": 0.0365
+    },
+    {
+      "index": 3,
+      "reference": "No i po prostu ja też nie uważam, że jestem jakaś wybitna w odbieraniu piłki,  jakby no są lepsze osoby więc też nie jest to moja ulubiona część, emm, gry, chociaż no najgorzej, bo na przykład bardzo lubię zagrywać, okej, ale też lubię wystawiać, no i wtedy już średnio lubię przyjmować i średnio lubię atakować, czy nie potrafię skakać też do bloku, no więc to jest takie kurde, że niby jakieś dwie preferencje mam, ale w sumie na żadną z tych pozycji tak w pełni bym się i tak nie nadawała",
+      "hypothesis": "No i po prostu ja też nie uważam, że jestem jakaś wybitna w odbieraniu piłki. Jakby no, są lepsze osoby. Więc też nie jest to moja ulubiona część gry. Chociaż no, najgorzej, bo na przykład bardzo lubię zagrywać, ok, ale też lubię wystawiać. No i wtedy już średnio lubię przyjmować i średnio lubię atakować. Nie potrafię skakać też do bloku. To jest takie, kurde, że niby jakieś dwie preferencje mam, ale w sumie na żadną z tych pozycji tak w pełni bym się i tak nie nadawała.",
+      "inference_time_s": 18.17,
+      "confidence": 0.9944,
+      "wer_raw": 0.2418,
+      "cer_raw": 0.0754,
+      "wer_normalized": 0.0549,
+      "cer_normalized": 0.0377
+    },
+    {
+      "index": 4,
+      "reference": "Przepraszam, nie widziałam, że piszesz, jesteśmy w kultowej, na Wrocławskiej, pa!",
+      "hypothesis": "Przepraszam, nie widziałam, że piszesz. Jesteśmy w Kultowej na Wrocławskiej. Pa!",
+      "inference_time_s": 7.5,
+      "confidence": 0.9862,
+      "wer_raw": 0.4545,
+      "cer_raw": 0.0741,
+      "wer_normalized": 0.0,
+      "cer_normalized": 0.0
+    },
+    {
+      "index": 5,
+      "reference": "Wczoraj wieczorkiem usiadłem sobie przy kompiku, obejrzałem se film Projekt Hail Mary, mega fajny, polecam.",
+      "hypothesis": "Wczoraj wieczorkiem usiadłem sobie przy kompiku, obejrzałem sobie firm, projekt Hail Mary, mega fajny, polecam.",
+      "inference_time_s": 7.38,
+      "confidence": 0.9908,
+      "wer_raw": 0.2,
+      "cer_raw": 0.0561,
+      "wer_normalized": 0.1333,
+      "cer_normalized": 0.0388
+    }
+  ]
+}

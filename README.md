@@ -107,12 +107,12 @@ data/
 
 ## Benchmarks
 
-*[To be filled after running full evaluation]*
+*6 Polish voice messages (Signal/Messenger), MacBook M1 CPU. Full analysis: [`ANALYSIS.md`](data/signal_voice/results/ANALYSIS.md)*
 
 | Model | WER (raw) | WER (norm) | CER (norm) | Avg Time | Confidence |
 |---|---|---|---|---|---|
-| distil-whisper-pl | — | — | — | — | — |
-| whisper-large-v3 | — | — | — | — | — |
-| whisper-medium | — | — | — | — | — |
-| whisper-small | — | — | — | — | — |
-| wav2vec2-xlsr | — | — | — | — | — |
+| **whisper-large-v3** | **30.8%** | **11.5%** | **6.6%** | 23.4s | 0.944 |
+| whisper-medium | 34.9% | 14.3% | 8.8% | 13.1s | 0.968 |
+| whisper-small | 39.9% | 22.5% | 10.7% | 4.6s | 0.897 |
+| distil-whisper-pl | 48.4% | 33.6% | 22.1% | 16.4s | 0.978 |
+| wav2vec2-xlsr | 66.3% | 51.0% | 24.8% | 2.3s | — |

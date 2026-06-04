@@ -1,8 +1,7 @@
 import json
 import os
 
-import numpy as np
-import soundfile as sf
+from .. import preprocessing
 
 
 def load_manifest(manifest_path: str):
@@ -21,6 +20,5 @@ class CustomVoiceDataset:
     def __getitem__(self, idx):
         entry = self.entries[idx]
         audio_path = os.path.join(self.base_dir, entry["file"])
-        audio, sr = sf.read(audio_path)
-        audio = audio.astype(np.float32)
-        return audio, sr, entry["reference"]
+        audio = preprocessing.load_audio(audio_path)
+        return audio, 16000, entry["reference"]

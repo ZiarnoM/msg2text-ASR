@@ -6,8 +6,9 @@ import sys
 
 sys.path.insert(0, ".")
 
+import src.models  # noqa: F401 — registers models
+
 from src.asr_interface import get_model, list_models
-from src.chunking import chunk_on_silence
 from src.preprocessing import detect_format, get_duration, load_audio
 
 
@@ -35,7 +36,7 @@ def main():
     print(f"Format: {fmt}")
     print(f"Model:  {args.model}\n")
 
-    chunks = chunk_on_silence(audio, sr) if duration > 30 else [audio]
+    # Model handles chunking internally (faster-whisper VAD, Wav2Vec2 sliding window)
     result = model.transcribe(audio, sr)
 
     if args.output == "json":
@@ -43,7 +44,7 @@ def main():
             "file": args.audio_file,
             "model": args.model,
             "duration_s": round(duration, 1),
-            "inference_time_s": result.inference_time,
+            "inference_time_s": result.inference_time_s,
             "confidence": result.confidence,
             "text": result.text,
             "segments": [{"start": s.start, "end": s.end, "text": s.text} for s in result.segments],

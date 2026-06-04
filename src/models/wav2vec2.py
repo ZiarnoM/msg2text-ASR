@@ -16,7 +16,7 @@ class Wav2Vec2XLSR(ASRModel):
             device = "cuda" if torch.cuda.is_available() else "cpu"
         self.device = device
 
-        model_id = "facebook/wav2vec2-xls-r-300m"
+        model_id = "jonatasgrosman/wav2vec2-large-xlsr-53-polish"
         self.processor = Wav2Vec2Processor.from_pretrained(model_id)
         self.model = Wav2Vec2ForCTC.from_pretrained(model_id).to(device)
 

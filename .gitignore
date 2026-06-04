@@ -224,6 +224,10 @@ notes
 *.mp3
 *.ogg
 *.flac
+*.aac
+
+# macOS
+.DS_Store
 
 # Model cache
 /models/
